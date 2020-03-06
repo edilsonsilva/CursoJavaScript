@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  width: 30%;
+  padding: 20px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+input,
+select {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  margin: 10px auto;
+  background-color: red;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+#resultado {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: justify;
+}
