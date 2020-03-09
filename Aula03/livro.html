@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a, b, c;
+      a = 999;
+      b = 555;
+      console.log(
+        "O valor de A é: " + a + "O valor de B é: " + b + "O valor de C é:" + c
+      );
+      //Para trocar os valores de A e B, usamos a variável C
+      c = a;
+      a = b;
+      b = c;
+      console.log(
+        "O valor de A é: " + a + "O valor de B é: " + b + "O valor de C é:" + c
+      );
+      c = undefined;
+      console.log("O valor de C é: " + c);
+    </script>
+  </body>
+</html>
