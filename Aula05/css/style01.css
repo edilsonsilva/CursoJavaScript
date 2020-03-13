@@ -61,3 +61,16 @@ h3 {
   background-color: lightcoral;
   color: darkred;
 }
+#saida div {
+  display: block;
+  width: 30%;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid silver;
+  font-family: arial;
+  font-size: 10pt;
+  text-align: justify;
+}
+#saida div img {
+  width: 100%;
+}
