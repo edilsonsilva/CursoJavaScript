@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <style>
+      #caixa {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: teal;
+      }
+
+      #caixa1 {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: tomato;
+      }
+      #caixa2 {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="caixa">Clique e arraste</div>
+
+    <div id="caixa1">Clique e arraste</div>
+
+    <div id="caixa2">Solte aqui</div>
+
+    <script>
+      $(function () {
+        $("#caixa").draggable();
+
+        $("#caixa1").draggable();
+
+        $("#caixa2").droppable({
+          drop: function (event, ui) {
+            alert("Bateu");
+            $(this).css("width", "400px");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

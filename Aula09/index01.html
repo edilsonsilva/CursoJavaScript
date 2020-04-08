@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="esconder">Esconder</button>
+    <button id="mostrar">Mostrar</button>
+    <button id="aplicarCSS">AplicarCSS</button>
+
+    <div id="caixa">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+      voluptatibus, aspernatur enim ipsam neque aut saepe voluptatum in
+      voluptates error odio quod eos commodi illum soluta eaque, obcaecati at
+      suscipit.Sequi odit, quibusdam delectus cum natus exercitationem
+      consequuntur at. Quis officiis libero provident blanditiis tempore iusto
+      atque nam laboriosam dignissimos necessitatibus, dolorem consequatur ex,
+      cupiditate delectus veritatis illum, accusamus eum!
+    </div>
+
+    <script>
+      $("#esconder").click(function () {
+        $("#caixa").hide(2000);
+      });
+
+      $("#mostrar").click(function () {
+        $("#caixa").show(3000);
+      });
+
+      $("#aplicarCSS").click(function () {
+        $("#caixa").css("color", "red").slideUp(2000);
+      });
+    </script>
+  </body>
+</html>
